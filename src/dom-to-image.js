@@ -465,7 +465,8 @@
     function makeImage(uri) {
       return new Promise(function (resolve, reject) {
         var image = new Image();
-        image.crossOrigin = "anonymous";
+        image.crossOrigin = "*";
+        console.log("debug");
         image.onload = function () {
           resolve(image);
         };
