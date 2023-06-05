@@ -1,6 +1,8 @@
 (function (global) {
   "use strict";
 
+  console.log("debug load");
+
   var util = newUtil();
   var inliner = newInliner();
   var fontFaces = newFontFaces();
